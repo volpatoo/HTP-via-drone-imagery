@@ -1,0 +1,63 @@
+###########################
+###   SYSTEM VARIABLES  ###
+###########################
+#use.all - use all available processors or not? If FALSE, will use nprocs - 2. This is for situations in which you're on a laptop where using all processors might crash your computer!
+# TRUE or FALSE
+use.all:TRUE
+
+###########################
+### SHAPEFILE VARIABLES ###
+###########################
+
+#########################################################
+### CREATE A SEPARATE FOLDER CONTAINING THE SHAPEFILE ###
+#########################################################
+# Data Source Name - name of the folder holding the shapefile
+DSN:Shapefile_plot
+
+# Layer - shapefile prefix
+Layer:plots_LA_2019_20cm_final_Corrected
+
+# Plots name column header
+Plots_name:MNPlot_1
+
+#############################
+### ORTHOMOSAIC VARIABLES ###
+#############################
+
+#######################################################################
+### CREATE A SEPARATE FOLDER CONTAINING THE ORTHOMOSAIC (IMAGE .TIF)###
+#######################################################################
+# Orthomosaic directory name
+Dir_name:"D:\OneDrive - Sierra College\UofMN\Paper\Paper_PlantMaturity\drone_pkg-master\drone_pkg-master\Ortho"
+
+##################################
+### VEGETATION INDEX VARIABLES ###
+##################################
+
+# RGB index 
+# GLI, TGI, HI
+RGBindex:GLI
+
+# Method for calculating per-plot stats 
+# mean, median, 1q, 5q, 25q, 50q, 75q, 90q, 95q, 99q
+VI_Method:75q
+
+
+############################
+### REGRESSION VARIABLES ###
+############################
+
+# Dates of drone flights relative to 31 August, e.g., 30 August = -1, 2 September = 2, etc...
+# Comma-separated list of dates
+Dates:-3, 3, 10, 12, 18, 23, 25, 39
+
+# Threshold value for respective RGBindex
+# GLI = 0.01 to 0.05
+# HI = 2.1 to 2.3
+# TGI = 1600 to 2300
+Threshold:0.02
+
+# Model- LOESS or SEG
+DPM_Model:SEG
+
