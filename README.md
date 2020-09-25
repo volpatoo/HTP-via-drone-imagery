@@ -1,4 +1,4 @@
-# HTP-via-drone-imagery
+# MatuRity script
 
 Getting started: https://github.com/volpatoo/HTP-via-drone-imagery/wiki/Getting-started
 
