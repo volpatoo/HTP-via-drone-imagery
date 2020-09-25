@@ -8,4 +8,3 @@ Running the scripts: https://github.com/volpatoo/HTP-via-drone-imagery/wiki/Runn
 # Plant height script
 
 Running the code: https://github.com/volpatoo/HTP-via-drone-imagery/wiki/Plant-height-estimation
-Lets see testtt
