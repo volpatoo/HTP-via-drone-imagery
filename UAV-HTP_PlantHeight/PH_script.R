@@ -13,7 +13,7 @@ library(car)
 library(Hmisc)
 library(fBasics)
 
-####General inputs
+####General inputs  
 
 ####Read the individual plots shapefiles polygons
 indPlots <- readOGR(dsn = "D:\\shp_folder", layer = "buffered_shapefilename")
